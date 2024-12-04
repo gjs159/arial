@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arial</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+	<script>
+	$( function() {
+		$( "#num" ).draggable();
+	} );
+	</script>
+
+
+</head>
+
+<body id="two">
+
+	<header class="header">
+		<a href="#" class="logo">Arial</a>
+		<nav class="navbar">
+			<a href="index.html">Home</a>
+			<a href="info.html">Info</a>
+			<a href="letters.html">Letters</a>
+			<a href="">Gallery</a>
+
+		</nav>
+
+	</header>
+
+	<div class="header1">
+		<h1 id="title">Arial</h1>
+		<h1 id="num">1982</h1>
+	</div>
+
+
+	<section class="section">
+		<p class="section_paragraph">A contemporary sans serif design, Arial contains more humanist characteristics than many of its predecessors and as such is more in tune with the mood of the last decades of the twentieth century. The overall treatment of curves is softer and fuller than in most industrial style sans serif faces. Terminal strokes are cut on the diagonal which helps to give the face a less mechanical appearance. Arial is an extremely versatile family of typefaces which can be used with equal success for text setting in reports, presentations, magazines etc, and for display use in newspapers, advertising and promotions.</p>
+		<p class="section_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+		<p class="section_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+	</section>
+
+	<script>
+		document.addEventListener("scroll", function() {
+			var paragraphs = document.querySelectorAll('.section_paragraph');
+			paragraphs.forEach(function(paragraph) {
+				paragraph.classList.add('section_paragraph--visible');
+			});
+		});
+	</script>
+
+	
+
+	
+</body>
+</html>

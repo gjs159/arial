@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'arial';
+    src: local('Arial'), url('./Arial.woff') format('woff');
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'arial', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FFFF00;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: #FFFF00;
+}
+
+nav {
+    display: flex;
+}
+
+.box {
+    margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+textarea {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: #FFFF00;
+    border: none;
+    outline: none;
+    font-family: 'arial', sans-serif; 
+    font-size: 72px;
+    padding: 200px;
+  
+}
+
+.square{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin-top: auto;
+    justify-content: left;
+    
+}
+
+.square:hover{
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background-color: #FFFF00;
+
+}
+
